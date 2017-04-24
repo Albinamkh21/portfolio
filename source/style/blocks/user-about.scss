@@ -1,0 +1,22 @@
+.user-about {
+  margin: 0 80px;
+  
+}
+.user-about__title{
+  text-align: center;
+}
+.user-about__picture {
+  background-image: url("../img/content/photo.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 443px;
+  height: 390px;
+
+}
+
+ .user-about__text {
+   font-family: "Roboto regular";
+
+   font-size: 16px;
+   color: $main-font-color;
+ }

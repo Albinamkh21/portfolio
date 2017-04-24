@@ -1,0 +1,30 @@
+.socials{
+
+}
+
+.socials__item {
+
+  display: inline-block;
+  list-style: none;
+  margin-left: 25px;
+
+}
+.socials__item:first-child{
+  margin-left: 0px;
+}
+.socials__link
+{
+  display: block;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 30px;
+
+  @each $item in 'vk_round', 'github_round', 'in_round' , 'vk', 'github', 'in'{
+    &_#{$item} {
+      background-image:  url("../img/icons/svg/#{$item}.svg");
+
+    }
+
+  }
+
+}

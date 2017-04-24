@@ -1,0 +1,41 @@
+extends ../main.layout.pug
+block variables
+    - var title = 'Blog'
+block content
+    section.section.hero
+        ul.socials
+            each item in ['vk', 'gh', 'in']
+                li.socials__item
+                    a(href="" class=`socials__link socials__link_${item}`)
+        a(href="").hamburger
+        a(href="").down-arrow
+        .hero__title
+            .title.subtitle_color_white
+                |БЛОГ
+            .text
+                |Статьи, которые я написал
+
+
+    section.section.blog-content
+        .blog-content__left
+            svg.triangle.triangle_fill_white
+            ul.menu
+                each item in blogArticles
+                  li.menu_item
+                    a(href="" class="menu__title") #{item}
+
+
+        .blog-content__right
+            svg.triangle.triangle_fill_beige
+
+            ul.articles
+                li.articles__item
+                    a(href="" class="articles__title")
+                    .articles__create_time
+                    .articles__text
+
+
+
+
+
+

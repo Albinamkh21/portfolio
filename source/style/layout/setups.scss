@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42;
+	-webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+	width: 1200px;
+	//margin: 0 auto;
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto -185px auto;
+}
+.wrapper:after {
+	content:"";
+	height:185px;
+	display: block;
+
+
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+* {
+	box-sizing: border-box;
+}

@@ -1,0 +1,57 @@
+extends ../main.layout.pug
+
+block content
+    section.section.hero
+        ul.socials
+            each item in ['vk', 'gh', 'in']
+                li.socials__item
+                    a(href="" class=`socials__link socials__link_${item}`)
+        a(href="").hamburger
+        a(href="").down-arrow
+        .hero__title
+            img(src="../../", alt="").section-title
+            .user.hero__user-block
+                .user__photo
+                .user__name
+                .user__desc
+    section.section.works
+        .title.works__section-title
+            | Мои работы
+        .about__left
+            svg.triangle.triangle_fill_white
+             .works-item
+                .title.works-item__title САЙТ ШКОЛЫ ОНЛАЙН /n ОБРАЗОВАНИЯ
+                .works-item__technology HTML, CSS, JAVASCRIPT
+                a().works-item__link
+        .about__right
+            svg.triangle.triangle_fill_beige
+            .galery
+    section.section.feedbacks
+        .title.feedbacks__section-title
+            | Что обо мне /n говорят
+        .feedbacks-data
+            //это список, или все-таки два одинаовых дива с модификатором позиционирования
+            .feedbacks-data.feedbacks-data_position_left
+                img(src="").feedbacks-data__picture
+                .feedbacks-data__text
+                    |Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                .feedbacks-data__signanure.signature-name
+                    |Ковальчук Дмитрий
+                .feedbacks-data__signanure.signature-position
+                    |основаель LoftSchool
+            .feedbacks-data.feedbacks-data_position_right
+                img(src="").feedbacks-data__picture
+                .feedbacks-data__text
+                    |тот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                .feedbacks-data__signanure.signature-name
+                    | Сабанцев Владимир
+                .feedbacks-data__signanure.signature-position
+                    | преподаватель
+        .feedbacks-form
+            .feedbacks-form__title
+            input().feedbacks-form__name
+            input().feedbacks-form__email
+            textarea().feedbacks-form__text
+            a().feedbacks-form__btn-send Отправить
+            a().feedbacks-form__btn-clear Очистить
+        a(href="").up-arrow

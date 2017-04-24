@@ -1,0 +1,32 @@
+.about {
+  @extend %clearfix;
+  background: $beige;
+}
+
+.about__left, .about__right {
+  float: left;
+  width: 50%;
+  position: relative;
+  height: 100%;
+}
+
+.about__left {
+  background: $white;
+}
+
+.about__right {
+  background: $beige;
+}
+
+.about__triangles {
+  position: absolute;
+  bottom: 100%;
+}
+.about__map{
+
+  height: 827px;
+}
+.about__section-title  {
+  @include centered(x);
+}
+

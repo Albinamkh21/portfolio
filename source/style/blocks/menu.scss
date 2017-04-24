@@ -1,0 +1,17 @@
+.menu__item {
+
+  display: inline-block;
+  list-style: none;
+  margin-left: 13px;
+}
+.menu__item:first-child {
+  margin-left: 0px;
+}
+.menu__link {
+  text-decoration: none;
+  font-style: normal;
+  font-family: "Roboto Medium";
+  font-size: 16px;
+  color: $white ;
+
+}
