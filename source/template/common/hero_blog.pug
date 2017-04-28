@@ -7,6 +7,10 @@ a(href="").hamburger.hero__hamburger
 a(href="").down-arrow
     img(src="assets/img/icons/arrow_down.svg").down-arrow__icon
 .hero__title
-    img(src="assets/img/decor/portfolio-header.png", alt="").section-title
-    include ../blocks/user
-
+      .user.hero__user-block
+        .user__photo
+            .user__photo-avatar
+                img(src="assets/img/content/user.jpg", alt="").user__photo-img
+      .title('БЛОГ', 'about-header.png', 'about__section-title')
+      .text
+            | Статьи, которые я написал

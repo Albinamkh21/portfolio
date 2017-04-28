@@ -1,0 +1,20 @@
+.welcome__user-wrapper{
+  @include centered();
+}
+
+.welcome__socials{
+  @include centered(x);
+  margin-top: 15px;
+
+}
+.welcome__menu {
+  min-height: 45px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  @include centered(x);
+  background-color: #08b09e;
+
+
+
+}

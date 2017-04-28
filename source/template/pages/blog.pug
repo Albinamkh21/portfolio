@@ -3,17 +3,9 @@ block variables
     - var title = 'Blog'
 block content
     section.section.hero
-        ul.socials
-            each item in ['vk', 'gh', 'in']
-                li.socials__item
-                    a(href="" class=`socials__link socials__link_${item}`)
-        a(href="").hamburger
-        a(href="").down-arrow
-        .hero__title
-            .title.subtitle_color_white
-                |БЛОГ
-            .text
-                |Статьи, которые я написал
+        include ../common/hero_blog
+
+
 
 
     section.section.blog-content

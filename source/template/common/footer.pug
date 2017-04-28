@@ -1,15 +1,15 @@
+block variables
+- var menu_type = 'footer__menu'
+- var menu_items = ['Мои работы', 'Обо мне', 'Блог','Авторизация']
+- var socials_type = 'footer__socials'
 footer.footer
     section.section.footer-main
         .footer-main-left
             .footer__text
                 | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-
         .footer-main-center
             include menu
-            .ul.socials.footer__socials
-                each item in ['vk', 'github', 'in']
-                    li.socials__item
-                        a(href="" class=`socials__link socials__link_${item}`)
+            include ../blocks/socials
         .footer-main-right
             .footer__text
                 p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
