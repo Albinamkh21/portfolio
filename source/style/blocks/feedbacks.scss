@@ -1,0 +1,89 @@
+.feedbacks {
+  width: 1200px;
+  height: 1140px;
+}
+.feedbacks-data__wrapper {
+  width: 1200px;
+  height:940px;
+  background-image: url("../img/bg/feedbacks_bg.jpg");
+  background-repeat: no-repeat;
+}
+.feedbacks-data {
+  width: 100%;
+  height: 200px;
+
+
+
+}
+
+.feedbacks-data_position_left , .feedbacks-data_position_right {
+  width: 50%;
+  float: left;
+
+}
+.feedbacks-data_position_left {
+
+}
+.feedbacks-data_position_right {
+
+}
+
+
+.feedbacks__title-wrapper {
+  position: relative;
+  @extend %clearfix;
+  height: 200px;
+  width: 1200px;
+
+}
+
+.feedbacks__section-title{
+  @include centered(x);
+
+}
+//можно сделать одним блоком
+.feedbacks__item {
+  text-align: left;
+  width: 400px;
+  height: 100%;
+}
+.margin_right {
+  margin-left: 200px;
+}
+
+.feedbacks__item-photo {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+}
+.feedbacks__item-img {
+  width: 100%;
+  height: 100%;
+}
+.feedbacks-data{
+  margin-bottom: 68px;
+}
+.feedbacks-data__text {
+  margin-bottom: 20px;
+
+
+}
+.feedbacks-data__signanure {
+  color : #20b5a1;
+  float: left;
+  margin-left: 20px;
+  vertical-align: middle;
+
+
+}
+.signature-name {
+  font-family: "Roboto Bold";
+  width: 100%;
+}
+.signature-position {
+  width: 100%;
+}

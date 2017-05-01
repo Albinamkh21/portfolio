@@ -29,3 +29,12 @@
   }
 }
 
+.title_color_white {
+  color: $color_real_whilte;
+
+
+  &:after, &:before {
+    background: rgba($color_real_whilte, .2);
+
+  }
+}

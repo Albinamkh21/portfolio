@@ -8,8 +8,13 @@
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  word-wrap: normal;
+    &_line {
+      padding: 37px 66px;
 
-  $margin : 40px;
+    }
+
+  $margin : 15px;
 
   &:after, &:before {
     content: "";

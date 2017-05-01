@@ -1,0 +1,59 @@
+.form-connect {
+
+  width: 380px;
+  height: 460px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #ede5e0, #26737c);
+  border-radius: 3px;
+  position: relative;
+}
+.form-connect__title {
+
+}
+.form-connect__name, .form-connect__email {
+  width: 90%;
+  height: 45px;
+  border-radius: 6px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.form-connect__text {
+  width: 90%;
+  height: 140px;
+  border-radius: 6px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.form-connect__btn-wrapper {
+  position: absolute;
+  bottom: 0px;
+  width: 50%;
+  float: left;
+  height: 45px;
+  background-color: #26bbaa;
+  text-align: center;
+
+}
+.form-connect__btn-wrapper_left {
+  left: 0px;
+}
+.form-connect__btn-wrapper_right {
+  right: 0px;
+}
+.form-connect__btn-wrapper:last-child {
+  background-color: #268e8c;
+  border-left: 1px solid $white;
+
+}
+.form-connect__btn {
+
+  font-family: "Roboto Medium";
+  color: $white;
+
+
+
+}
+
+
