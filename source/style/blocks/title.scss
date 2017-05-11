@@ -8,6 +8,14 @@
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  @include tablets{
+    font-size: 49px;
+    padding: 45px 40px;
+  }
+  @include tablets{
+    font-size: 35px;
+    padding: 45px 40px;
+  }
 
   $margin : 40px;
 

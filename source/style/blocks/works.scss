@@ -1,13 +1,13 @@
 .works{
   position: relative;
-  height: 936px;
-  min-height: 600px;
+  height: 186px;
+  min-height: 186px;
 }
 .works__title-wrapper {
   position: relative;
   @extend %clearfix;
   height: 186px;
-  width: 1200px;
+  width: 100%;
 }
 .works__section-title {
   @include centered(x);
@@ -40,51 +40,3 @@
 
 }
 
-.works-item {
-  position: relative;
-  height: 750px;
-  width: 100%;
-  text-align: center;
-
-
-}
-
-.works-item__text {
-  @include centered();
-
-}
-
-.works-item__title {
-  margin-bottom: 40px;
-}
-
-
-.works-item__technology {
-  height: 50px;
-  font-family: "Roboto Medium" ;
-  color: #20b5a1;
-  font-size: 16px;
-  padding: 17px 0px;
-  border-bottom: 1px solid #20b5a1;
-  border-top: 1px solid #20b5a1;
-  margin-bottom: 40px;
-
-
-}
-.works-item__link {
-    height: 45px;
-    background-color:  #20b5a1;
-    color: $color_real_whilte;
-    text-decoration: none;
-    font-family:"Roboto Bold";
-    font-size: 16px;
-    padding: 17px;
-}
-
-.works-item__link-icon {
-  line-height: 25px;
-  display: block;
-  vertical-align: middle;
-  fill: $white;
-
-}

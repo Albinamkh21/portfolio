@@ -20,34 +20,85 @@ block content
                     polygon(points="0,100 1000,100 1000,0")
         .works__title-wrapper
             +title('Мои работы', 'works-header.png', 'works__section-title')
-        .works__left
-            .works-item
-                .works-item__text
-                    .works-item__title.subtitle САЙТ ШКОЛЫ ОНЛАЙН <wrap> ОБРАЗОВАНИЯ
-                    .works-item__technology HTML, CSS, JAVASCRIPT
-                    a.works-item__link Посмотреть сайт
-                        //svg.works-item__link-icon
-                          //  use(xlink:href="assets/img/icons/sprite.svg#link")
+    section.section.slider
+        .slider__description
+            .slider__description-info
+                ul(class = "slider-description__list")
+                    li(class = "slider-description__item active")
+                        .slider__description-title
+                            .subtitle Бейсбол онлайн
+                        .slider__description-skills
+                            | HTML, css, PHP
+                        .slider__description-btn
+                            a(href="#").btn Посмотреть сайт
+                    li(class = "slider-description__item ")
+                        .slider__description-title
+                            .subtitle Сайт школы онлайн <br> образования
+                        .slider__description-skills
+                            | HTML, css, javascript
+                        .slider__description-btn
+                            a(href="#").btn Посмотреть сайт
+                    li(class = "slider-description__item ")
+                        .slider__description-title
+                            .subtitle Лучшие бассейны
+                        .slider__description-skills
+                            | HTML, css, PHP
+                        .slider__description-btn
+                            a(href="#").btn Посмотреть сайт
+                    li(class = "slider-description__item ")
+                        .slider__description-title
+                            .subtitle Йога студия
+                        .slider__description-skills
+                            | HTML, css, javascript, PHP
+                        .slider__description-btn
+                            a(href="#").btn Посмотреть сайт
+        .slider__display
+            .slider__display-block
+                img( src = "assets/img/slider/1.jpeg").slider__display-pic
+                ul(class="slider__list")
+                    li(class="slider__item active")
+                        img( src = "assets/img/slider/1.jpeg")
+                    li(class="slider__item")
+                        img( src = "assets/img/slider/2.jpeg")
+                    li(class="slider__item")
+                        img( src = "assets/img/slider/3.jpeg")
+                    li(class="slider__item ")
+                        img( src = "assets/img/slider/4.jpeg")
 
-        .works__right
-            .slider
-                .slider-top
-                    .slider__main-photo-wrapper
-                        img( src = "assets/img/content/slider1.png")
 
-                .slider-bottom
-                    .slider-bottom__left
-                        .slider-bottom__photo
-                            img( src = "assets/img/content/1.png" class = "slider-bottom__photo1" )
-                            .slider-bottom__fon_left
-                                a(href="").slider__down-arrow
-                                    img(src="assets/img/icons/svg/portf_arrow_down.svg").slider__down-arrow-icon
-                    .slider-bottom__right
-                        .slider-bottom__photo
-                            img( src = "assets/img/content/1.png" class = "slider-bottom__photo1" )
-                            .slider-bottom__fon_right
-                                a(href="").slider__down-arrow
-                                    img(src="assets/img/icons/svg/portf_arrow_up.svg").slider__down-arrow-icon
+        .slider__btns
+            .slider__btns__down
+                .slider__btns__photo
+
+                    ul(class="slider__list")
+                        li(class="slider__item ")
+                            img( src = "assets/img/slider/1.jpeg").slider__btns__photo1
+                        li(class="slider__item")
+                            img( src = "assets/img/slider/2.jpeg").slider__btns__photo1
+                        li(class="slider__item")
+                            img( src = "assets/img/slider/3.jpeg").slider__btns__photo1
+                        li(class="slider__item active")
+                            img( src = "assets/img/slider/4.jpeg").slider__btns__photo1
+                    a(href="" id="sliderDownArrow" ).slider__down-arrow
+                        img(src="assets/img/icons/svg/portf_arrow_down.svg").slider__down-arrow-icon
+                    .slider__btns__fon_down
+            .slider__btns__up
+                .slider__btns__photo
+                    ul(class="slider__list")
+                        li(class="slider__item ")
+                            img( src = "assets/img/slider/1.jpeg").slider__btns__photo1
+                        li(class="slider__item active")
+                            img( src = "assets/img/slider/2.jpeg").slider__btns__photo1
+                        li(class="slider__item")
+                            img( src = "assets/img/slider/3.jpeg").slider__btns__photo1
+                        li(class="slider__item")
+                            img( src = "assets/img/slider/4.jpeg").slider__btns__photo1
+                    a(href="" id="sliderUpArrow").slider__down-arrow
+                        img(src="assets/img/icons/svg/portf_arrow_up.svg").slider__down-arrow-icon
+                    .slider__btns__fon_up
+
+
+
     section.section.feedbacks
         .feedbacks__title-wrapper
             +title('Что обо мне  говорят', 'about-header.png', 'feedbacks__section-title')
@@ -59,34 +110,37 @@ block content
                     .feedbacks__item.margin_right
                         .feedbacks-data__text
                             |Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                        .feedbacks__item-photo
-                                img(src="assets/img/content/user.jpg", alt="").feedbacks__item-img
-                        .feedbacks-data__signanure
-                            .signature-name
-                                | Ковальчук Дмитрий
-                            .signature-position
-                                | основаель LoftSchool
+                        .feedbacks__item-user
+                            .feedbacks__item-photo
+                                    img(src="assets/img/content/user.jpg", alt="").feedbacks__item-img
+                            .feedbacks__item-signanure
+                                .signature-name
+                                    | Ковальчук Дмитрий
+                                .signature-position
+                                    | основаель LoftSchool
                 .feedbacks-data_position_right
                     .feedbacks__item
                         .feedbacks-data__text
-                            |тот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-                        .feedbacks__item-photo
-                            img(src="assets/img/content/user.jpg", alt="").feedbacks__item-img
-                        .feedbacks-data__signanure
-                            .signature-name
-                                | Сабанцев Владимир
-                            .signature-position
-                                | преподаватель
+                            |Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                        .feedbacks__item-user
+                            .feedbacks__item-photo
+                                img(src="assets/img/content/user.jpg", alt="").feedbacks__item-img
+                            .feedbacks__item-signanure
+                                .signature-name
+                                    | Сабанцев Владимир
+                                .signature-position
+                                    | преподаватель
             .form-connect
                 .subtitle.subtitle_line
                     | Связаться со сной
                 input(placeholder="Имя").form-connect__name
                 input(placeholder="Email").form-connect__email
-                textarea(placeholder="Ваше сообщение").form-connect__text
-                .form-connect__btn-wrapper.form-connect__btn-wrapper_left
-                    a().form-connect__btn.form-connect__btn-send Отправить
-                .form-connect__btn-wrapper.form-connect__btn-wrapper_right
-                    a().form-connect__btn.form-connect__btn-clear Очистить
+                textarea(placeholder="Ваше сообщение" ).form-connect__text
+                .form-connect__btn-wrapper
+                    .form-connect__btn-wrapper_left
+                        a().form-connect__btn.form-connect__btn-send Отправить
+                    .form-connect__btn-wrapper_right
+                        a().form-connect__btn.form-connect__btn-clear Очистить
 
 
         a(href="").up-arrow

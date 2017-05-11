@@ -1,29 +1,9 @@
-(function() {
-  'use strict';
-
-  setTimeout(function() {
-    document.querySelector('.greating_picture').classList.add('m--show');
-  }, 1000);
-})();
-
-
-
-
-$(function () {
-    slider.init();
-});
-
-
-
-
-
-
-
-/*slider*/
 var slider = (function () {
     var counter = 0,
         duration = 300,
         inProcess = false;
+
+
     var moveSlide =  function (direction) {
         var upList = $('.slider__item', '.slider__btns__up'),
             upActiveItem = upList.filter('.active'),
@@ -39,6 +19,11 @@ var slider = (function () {
             displayIndex = displayActiveItem.index(),
             directionCounter = direction == 'down' ? -1 : +1;
 
+        console.log(`downBtnIndex:${downBtnIndex}`);
+
+        console.log(`displayIndex:${displayIndex}`);
+        console.log(`upBtnIndex:${upBtnIndex}`);
+        console.log(direction);
 
         if(direction=='up') {
             displayIndex = displayIndex+1 >= displayList.length? 0: displayIndex+1;
@@ -53,6 +38,10 @@ var slider = (function () {
         var regItemUp = upList.eq(upBtnIndex);
         var regItemDown = downList.eq(downBtnIndex);
         var regItemForDesc = descList.eq(displayIndex);
+        console.log(`downBtnIndex:${downBtnIndex}`);
+        console.log(`displayIndex:${displayIndex}`);
+        console.log(`upBtnIndex:${upBtnIndex}`);
+
 
 
         //обновитть картнку в контролах
@@ -115,6 +104,8 @@ var slider = (function () {
 
 
     }
+
+
     return {
         init: function () { //здесь на родителя нужно навесить
             $('#sliderUpArrow').on('click', function (e) {
@@ -136,30 +127,4 @@ var slider = (function () {
             });
         }
     }
-}());
-
-/*slider finish*/
-
-
-
-// flipper
-var flipper = (function () {
-
-    var flipper =  document.getElementById('flipper');
-    var authBtn =  document.getElementById('authBtn');
-
-    document.addEventListener('click', function (e) {
-        console.log(e.target.id);
-        if(e.target.id=="authBtn"){
-            e.preventDefault();
-            flipper.classList.add('hover');
-
-        }else {
-
-            flipper.classList.remove('hover');
-
-        }
-    });
-
-
 }());
