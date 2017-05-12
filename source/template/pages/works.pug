@@ -29,73 +29,79 @@ block content
                             .subtitle Бейсбол онлайн
                         .slider__description-skills
                             | HTML, css, PHP
-                        .slider__description-btn
-                            a(href="#").btn Посмотреть сайт
+                        .slider__description-btn-wrapper
+                            a(href="#").slider__description__btn
+                                i(aria-hidden="true").fa.fa-link
+                                .slider__description__btn-text Посмотреть сайт
                     li(class = "slider-description__item ")
                         .slider__description-title
                             .subtitle Сайт школы онлайн <br> образования
                         .slider__description-skills
                             | HTML, css, javascript
-                        .slider__description-btn
-                            a(href="#").btn Посмотреть сайт
+                        .slider__description-btn-wrapper
+                            a(href="#").slider__description__btn
+                                i(aria-hidden="true").fa.fa-link
+                                .slider__description__btn-text Посмотреть сайт
                     li(class = "slider-description__item ")
                         .slider__description-title
                             .subtitle Лучшие бассейны
                         .slider__description-skills
                             | HTML, css, PHP
-                        .slider__description-btn
-                            a(href="#").btn Посмотреть сайт
+                        .slider__description-btn-wrapper
+                            a(href="#").slider__description__btn
+                                i(aria-hidden="true").fa.fa-link
+                                .slider__description__btn-text Посмотреть сайт
                     li(class = "slider-description__item ")
                         .slider__description-title
                             .subtitle Йога студия
                         .slider__description-skills
                             | HTML, css, javascript, PHP
-                        .slider__description-btn
-                            a(href="#").btn Посмотреть сайт
+                        .slider__description-btn-wrapper
+                            a(href="#").slider__description__btn
+                                i(aria-hidden="true").fa.fa-link
+                                .slider__description__btn-text Посмотреть сайт
         .slider__display
-            .slider__display-block
+
                 img( src = "assets/img/slider/1.jpeg").slider__display-pic
-                ul(class="slider__list")
-                    li(class="slider__item active")
-                        img( src = "assets/img/slider/1.jpeg")
-                    li(class="slider__item")
-                        img( src = "assets/img/slider/2.jpeg")
-                    li(class="slider__item")
-                        img( src = "assets/img/slider/3.jpeg")
-                    li(class="slider__item ")
-                        img( src = "assets/img/slider/4.jpeg")
+                .slider__display-block
+                    ul(class="slider__list")
+                        li(class="slider__item active")
+                            img( src = "assets/img/slider/1.jpeg")
+                        li(class="slider__item")
+                            img( src = "assets/img/slider/2.jpeg")
+                        li(class="slider__item")
+                            img( src = "assets/img/slider/3.jpeg")
+                        li(class="slider__item ")
+                            img( src = "assets/img/slider/4.jpeg")
 
 
         .slider__btns
             .slider__btns__down
-                .slider__btns__photo
+                ul(class="slider__list")
+                    li(class="slider__item ")
+                        img( src = "assets/img/slider/1.jpeg").slider__btns__photo
+                    li(class="slider__item")
+                        img( src = "assets/img/slider/2.jpeg").slider__btns__photo
+                    li(class="slider__item")
+                        img( src = "assets/img/slider/3.jpeg").slider__btns__photo
+                    li(class="slider__item active")
+                        img( src = "assets/img/slider/4.jpeg").slider__btns__photo
+                a(href="" id="sliderDownArrow" ).slider__btns_link.slider__btns_link_color_lighten
+                    img(src="assets/img/icons/svg/portf_arrow_down.svg").slider__down-arrow-icon
 
-                    ul(class="slider__list")
-                        li(class="slider__item ")
-                            img( src = "assets/img/slider/1.jpeg").slider__btns__photo1
-                        li(class="slider__item")
-                            img( src = "assets/img/slider/2.jpeg").slider__btns__photo1
-                        li(class="slider__item")
-                            img( src = "assets/img/slider/3.jpeg").slider__btns__photo1
-                        li(class="slider__item active")
-                            img( src = "assets/img/slider/4.jpeg").slider__btns__photo1
-                    a(href="" id="sliderDownArrow" ).slider__down-arrow
-                        img(src="assets/img/icons/svg/portf_arrow_down.svg").slider__down-arrow-icon
-                    .slider__btns__fon_down
             .slider__btns__up
-                .slider__btns__photo
-                    ul(class="slider__list")
-                        li(class="slider__item ")
-                            img( src = "assets/img/slider/1.jpeg").slider__btns__photo1
-                        li(class="slider__item active")
-                            img( src = "assets/img/slider/2.jpeg").slider__btns__photo1
-                        li(class="slider__item")
-                            img( src = "assets/img/slider/3.jpeg").slider__btns__photo1
-                        li(class="slider__item")
-                            img( src = "assets/img/slider/4.jpeg").slider__btns__photo1
-                    a(href="" id="sliderUpArrow").slider__down-arrow
-                        img(src="assets/img/icons/svg/portf_arrow_up.svg").slider__down-arrow-icon
-                    .slider__btns__fon_up
+                ul(class="slider__list")
+                    li(class="slider__item ")
+                        img( src = "assets/img/slider/1.jpeg").slider__btns__photo
+                    li(class="slider__item active")
+                        img( src = "assets/img/slider/2.jpeg").slider__btns__photo
+                    li(class="slider__item")
+                        img( src = "assets/img/slider/3.jpeg").slider__btns__photo
+                    li(class="slider__item")
+                        img( src = "assets/img/slider/4.jpeg").slider__btns__photo
+                a(href="" id="sliderUpArrow").slider__btns_link
+                    img(src="assets/img/icons/svg/portf_arrow_up.svg").slider__down-arrow-icon
+
 
 
 
@@ -108,6 +114,7 @@ block content
                 //это список, или все-таки два одинаовых дива с модификатором позиционирования
                 .feedbacks-data_position_left
                     .feedbacks__item.margin_right
+                        i(class="fa fa-quote-left feedbacks__item-quote" aria-hidden="true")
                         .feedbacks-data__text
                             |Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                         .feedbacks__item-user
@@ -120,6 +127,7 @@ block content
                                     | основаель LoftSchool
                 .feedbacks-data_position_right
                     .feedbacks__item
+                        i(class="fa fa-quote-left feedbacks__item-quote" aria-hidden="true")
                         .feedbacks-data__text
                             |Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
                         .feedbacks__item-user
@@ -131,11 +139,12 @@ block content
                                 .signature-position
                                     | преподаватель
             .form-connect
-                .subtitle.subtitle_line
+                .subtitle
                     | Связаться со сной
-                input(placeholder="Имя").form-connect__name
-                input(placeholder="Email").form-connect__email
-                textarea(placeholder="Ваше сообщение" ).form-connect__text
+                .form-connect__inputs
+                    input(placeholder="Имя").form-connect__name
+                    input(placeholder="Email").form-connect__email
+                    textarea(placeholder="Ваше сообщение" ).form-connect__text
                 .form-connect__btn-wrapper
                     .form-connect__btn-wrapper_left
                         a().form-connect__btn.form-connect__btn-send Отправить

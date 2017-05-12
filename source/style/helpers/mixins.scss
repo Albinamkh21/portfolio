@@ -25,16 +25,16 @@
     clear: both;
   }
 }
-
+/*
 @mixin desktop() {
   @media screen and (max-width: 1200px) {
     @content
   }
 
 }
-
+*/
 @mixin laptop() {
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1200px) {
     @content
   }
 
@@ -44,7 +44,11 @@
   @media screen and (max-width: 768px) {
     @content
   }
-
+}
+@mixin tabletssmall(){
+  @media screen and (max-width:660px){
+    @content;
+  }
 }
 @mixin phone() {
   @media screen and (max-width: 480px) {
@@ -53,3 +57,8 @@
 
 }
 
+@mixin album(){
+  @media screen and (orientation:landscape) and (max-width:768px){
+    @content;
+  }
+}

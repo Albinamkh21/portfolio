@@ -1,10 +1,7 @@
 html {
   height: 100%;
 
-	@include desktop {
-		font-size: 16px;
-
-	}
+	font-size: 16px;
 	@include laptop {
 		font-size: 15px;
 
@@ -23,7 +20,7 @@ html {
 body {
 	height: 100%;
 	margin: 0;
-	font-family: "Roboto", Arial, sans-serif;
+	font-family: "Roboto Medium", Arial, sans-serif;
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
 }
@@ -38,12 +35,9 @@ body {
 	font-family: "Roboto regular";
 	color: $main-font-color;
 	max-width: 1200px;
-	@include desktop {
-		width:970px;
 
-	}
 	@include laptop {
-		width:750px;
+		width:1200px;
 
 	}
 	@include tablets {
@@ -87,4 +81,7 @@ h1, h2, h3, h4, h5 {
 
 * {
 	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
 }

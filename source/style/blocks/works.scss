@@ -4,13 +4,12 @@
   min-height: 186px;
 }
 .works__title-wrapper {
-  position: relative;
-  @extend %clearfix;
-  height: 186px;
-  width: 100%;
+
 }
-.works__section-title {
-  @include centered(x);
+.works__section-title{
+
+
+
 }
 .works-content__triangle {
   position: absolute;

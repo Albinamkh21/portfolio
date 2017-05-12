@@ -1,11 +1,11 @@
 .form-connect {
 
-  width: 380px;
+  width: 26rem;
   height: 460px;
   margin: 0 auto;
   background: linear-gradient(to bottom, #ede5e0, #26737c);
   border-radius: 8px;
-  //position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,22 +13,50 @@
 .form-connect__title {
 
 }
-.form-connect__name, .form-connect__email {
-  width: 90%;
-  height: 45px;
+
+.form-connect__inputs{
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.reviews__form-input{
+  margin-bottom: 20px;
+}
+
+.reviews__form-element{
+  display: block;
+  width: 100%;
+  padding: 8px;
   border-radius: 6px;
-  margin: 0 20px;
+  border: 2px solid transparent;
+
+  &:focus{
+    outline: none;
+    border: 2px solid #009688;
+  }
+}
+
+.form-connect__name, .form-connect__email {
+  display: block;
+  width: 100%;
+  padding: 8px;
+ // height: 45px;
+  border-radius: 6px;
   margin-bottom: 20px;
   outline: none;
   border: none;
+  &:focus{
+    outline: none;
+    border: 2px solid #26bbaa;
+  }
 }
 
 .form-connect__text {
-  width: 90%;
+  display: block;
+  width: 100%;
   height: 140px;
+  padding: 8px;
   border-radius: 6px;
-  margin: 0 20px;
-  margin-bottom: 20px;
   resize:none;
   outline: none;
   border: none;

@@ -12,6 +12,20 @@
 	font-family: 'bernier';
 }
 
+
+
+
+@font-face {
+	font-family: 'bernier_regularregular';
+	src: url('../fonts/BERNIERRegular-Regular.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@mixin bernier_regularregular() {
+	font-family: 'bernier_regularregular';
+}
+
+
 @font-face {
 	font-family: 'Roboto Medium';
 	src: url('../fonts/Roboto-Medium.ttf') format('ttf');

@@ -2,14 +2,11 @@
 {
   max-width: 1200px;
   background: #53595c;
-  @include desktop {
-    width:970px;
-    font-size: 16px;
-    height: 185px;
+  font-size: 16px;
+  height: 185px;
 
-  }
   @include laptop {
-    width:750px;
+    width:1200px;
     font-size: 15px;
     height: 185px;
 
