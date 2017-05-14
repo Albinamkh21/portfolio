@@ -22,7 +22,7 @@
   text-decoration: none;
   font-family: "Roboto Medium";
   color: $white;
-  line-height:45px;
+
 
 }
 
@@ -45,6 +45,9 @@
 
   .menu__item:hover {
     background-color: #0d9089;
+  }
+  .menu__link {
+    line-height:45px;
   }
 }
 
