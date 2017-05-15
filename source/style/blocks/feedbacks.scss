@@ -1,6 +1,7 @@
 .feedbacks {
   width: 100%;
   height:auto;
+  position: relative;
 }
 .feedbacks-data__wrapper {
   width: 100%;
@@ -32,12 +33,14 @@
 
 
 .feedbacks__title-wrapper {
+ // position: relative;
 
 
 }
 
 .feedbacks__section-title{
   //@include centered(x);
+  position: absolute;
 
 }
 //можно сделать одним блоком

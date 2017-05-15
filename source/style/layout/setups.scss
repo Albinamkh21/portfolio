@@ -1,3 +1,10 @@
+html, body{
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding:0;
+}
+
 html {
   height: 100%;
 
@@ -18,6 +25,7 @@ html {
 
 }
 
+
 body {
 	height: 100%;
 	margin: 0;
@@ -28,14 +36,21 @@ body {
 
 .page-content {
 	display: flex;
-	min-height: 100vh;
+	//min-height: 100vh;
 	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	min-width: 100%;
+	min-height: 100%;
+	//max-width: 1200px;
+	//margin: 0 auto;
 }
 .wrapper {
 	flex: 1;
 	font-family: "Roboto regular";
 	color: $main-font-color;
 	max-width: 1200px;
+	width: 100%;
 
 	@include laptop {
 		width:1200px;

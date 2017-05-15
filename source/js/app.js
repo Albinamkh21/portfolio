@@ -13,8 +13,9 @@ $(document).ready(function() {
         preloader.init();
     }
     slider.init();
-
-
+    if($('.fullscreen-menu').length){
+        fullscreenMenu.init();
+    }
 
 });
 
@@ -221,6 +222,48 @@ var preloader = (function () {
 })();
 
 /*preloader finish*/
+
+/*hambueger menu*/
+
+
+var fullscreenMenu = (function () {
+
+    var menu = $('.fullscreen-menu');
+
+    var init = function () {
+
+        $('.hamburger-menu__link').on('click', _openMenu);
+    };
+
+    var _openMenu = function (e) {
+
+        e.preventDefault ();
+
+        if ($(this).hasClass('active')) {
+
+            $(this).removeClass('active');
+            $('body').css('position','static');
+            menu.slideUp();
+
+        } else {
+
+            $(this).addClass('active');
+            $('body').css('position','fixed');
+            menu.slideDown();
+
+        }
+
+    };
+
+    return{
+
+        init:init
+
+    };
+
+})();
+
+/*hambueger menu finished*/
 
 // flipper
 var flipper = (function () {
