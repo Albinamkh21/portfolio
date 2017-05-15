@@ -2,12 +2,24 @@
   color: $main-font-color;
   font-size: 63px;
   @include bernier();
+ // @include centered(x);
   padding: 45px 80px;
   display: inline-block;
   position: relative;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  text-transform: uppercase;
+  text-align: center;
+ /* @include tablets{
+    // padding: 45px 40px;
+   }
+   */
+  @include phone{
+    font-size: 58px;
+   // padding: 45px 20px;
+  }
+
 
   $margin : 40px;
 
@@ -18,6 +30,7 @@
     background: rgba($main-font-color, .2);
     width: 22px;
     height: 5px;
+   // top:88px;
   }
 
   &:after {
@@ -29,3 +42,12 @@
   }
 }
 
+.title_color_white {
+  color: $color_real_whilte;
+
+
+  &:after, &:before {
+    background: rgba($color_real_whilte, .2);
+
+  }
+}

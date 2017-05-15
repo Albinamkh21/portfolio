@@ -5,16 +5,26 @@ block content
   section.section.hero
     include ../common/hero.pug
 
-  section.section.about
+  section.section.about-title
+    .works-content__triangle
+      .works-content__triangle_left
+        svg(
+        viewbox="0 0 1000 100"
+        preserveAspectRatio="none"
+        class="triangle triangle_fill_white blog_triangle_position")
+          polygon(points="0,0 0,100 1000,100")
+      .works-content__triangle_right
+        svg(
+        viewbox="0 0 1000 100"
+        preserveAspectRatio="none"
+        class="triangle triangle_fill_beige blog_triangle_position")
+          polygon(points="0,100 1000,100 1000,0")
+  section.section.about-content
     .about__left
-      svg(
-      viewbox="0 0 1000 100"
-      preserveAspectRatio="none"
-      class="triangle triangle_fill_white about__triangles")
-        polygon(points="0,0 0,100 1000,100")
       +title('Обо мне', 'about-header.png', 'about__section-title')
       .user-about
         .user-about__picture
+          img(src="assets/img/content/photo.png").user-about__picture-img
         .user-about__title
           .subtitle
             | Кто я
@@ -22,12 +32,6 @@ block content
           p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
           p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
     .about__right
-      svg(
-      viewbox="0 0 1000 100"
-      preserveAspectRatio="none"
-      class="triangle triangle_fill_beige about__triangles")
-        polygon(points="0,100 1000,100 1000,0")
-
       .about-data
         .about-data__description
           .about-data__title
@@ -54,6 +58,9 @@ block content
 
 
   section.section.map.about__map
+
+
+
 
 
 

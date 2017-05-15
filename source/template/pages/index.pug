@@ -1,7 +1,8 @@
-extends ../main.layout.pug
-
+extends ../welcome.layout.pug
 block variables
-  - var title = 'Home page'
+  - var title = 'Welcome'
 block content
-  a(href="/about.html") goto  About
+
+  section.section.hero
+    include ../common/hero_welcome.pug
 

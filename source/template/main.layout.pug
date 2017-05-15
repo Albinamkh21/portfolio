@@ -3,7 +3,7 @@ include mixins/mixins
 block variables
 
 doctype html
-html
+html(lang="ru-RU")
   head
     meta(charset="utf-8")
     title #{title}
@@ -16,10 +16,11 @@ html
     //- favicon block start
     //- favicon block end
 
-    link(rel='stylesheet' href='/assets/css/foundation.css')
+    link(rel='stylesheet' href='assets/css/foundation.css')
     link(rel='stylesheet' href='assets/css/main.css')
-    script(src='/assets/js/foundation.js' defer)
-    script(src='/assets/js/app.js' defer)
+    link(rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    script(src='assets/js/foundation.js' defer)
+    script(src='assets/js/app.js' defer)
 
     <!--[if lt IE 9]>
     script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
@@ -35,7 +36,14 @@ html
     }
 
 body
-    .wrapper
-      block content
-    include common/footer
+    .preloader
+      .preloader__spinner
+        .preloader__animation
+        .preloader__percents 100%
+
+    .page-content
+      include blocks/fullscreen-menu
+      .wrapper
+        block content
+      include common/footer
 

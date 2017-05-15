@@ -1,3 +1,6 @@
+.hero__bg {
+  height: 600px;
+}
 .hero {
   height: 600px;
   overflow: hidden;
@@ -23,4 +26,8 @@
   position: absolute;
   top: 30px;
   right: 20px;
+}
+
+.hero__text {
+  font-size: 16px;
 }
