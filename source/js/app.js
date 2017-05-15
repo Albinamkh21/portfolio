@@ -7,10 +7,15 @@
 })();
 
 
+$(document).ready(function() {
 
-
-$(function () {
+    if($('.preloader').length){
+        preloader.init();
+    }
     slider.init();
+
+
+
 });
 
 
@@ -140,7 +145,82 @@ var slider = (function () {
 
 /*slider finish*/
 
+/*preloader*/
+var preloader = (function () {
 
+    var preloader = $('.preloader');
+    var percentsTotal = 0;
+
+    var init = function () {
+        var myImages = imgPath.toArray();
+         loadImages(myImages);
+
+    }
+    var imgPath = $('*').map(function(index, elem) {
+        console.log(4);
+
+        var background = $(elem).css('background-image'),
+            img = $(elem).is('img'),
+            path = '';
+        if (background != 'none') {
+            path = background.replace('url("', '').replace('")', '');
+        }
+        if (img) {
+            path = $(elem).attr('src');
+        }
+        if (path) {
+            return path;
+        }
+
+    });
+
+    var setPercents = function (total, current) {
+
+        var percents = Math.ceil(current/total*100);
+
+        $('.preloader__percents').text(percents + '%');
+
+        if (percents >=100) {
+            setTimeout(function(){
+                preloader.fadeOut()
+            }, 500);
+        }
+
+    };
+
+    var loadImages = function (images) {
+        if (!images.length) {
+            preloader.fadeOut();
+        }
+
+        images.forEach( function(img, index) {
+            var fakeImage = $('<img>', {
+                attr: {
+                    src: img
+                }
+
+            });
+
+            fakeImage.on('load error', function() {
+
+                percentsTotal++;
+                setPercents(images.length, percentsTotal);
+
+            });
+
+        });
+
+    };
+
+    return{
+
+        init:init
+
+    };
+
+})();
+
+/*preloader finish*/
 
 // flipper
 var flipper = (function () {
